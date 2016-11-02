@@ -9,3 +9,4 @@ $ git clone git@github.com:smithtimmytim/iron-yard-workshop.git
 ```
 
 Then open `index.html` in your browser.
+# iron-yard-workshop
