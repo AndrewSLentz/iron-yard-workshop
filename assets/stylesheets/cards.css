@@ -2,3 +2,34 @@
 ----------------------------------
 Card Styles
 ---------------------------------- */
+
+.card {
+  background-color: #35FEFE;
+  border-radius: 20px;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  .deck {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    margin: 5px;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 160px;
+  }
+}

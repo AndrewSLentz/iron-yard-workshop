@@ -2,3 +2,99 @@
 ----------------------------------
 Header Styles
 ---------------------------------- */
+
+.logo {
+  width: 40px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.logo svg {
+  fill: coral;
+}
+
+.navigation {
+  background: #DDD;
+  padding: .5rem 1rem;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation li {
+  padding-right: .5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #1560FB;
+  transition: color .2s ease;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: coral;
+}
+
+.navigation a:focus {
+  outline: 0;
+  border: 1px dotted;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.search-form {
+  background-color: #efefef;
+  padding: .5rem 1rem;
+}
+
+.search {
+  width: 100%;
+}
+
+@media (min-width: 650px) {
+  .logo {
+    margin: 1rem;
+  }
+
+  .nav-search-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation,
+  .search-form {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #EEE;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-search-wrapper {
+    flex: 1;
+  }
+}
